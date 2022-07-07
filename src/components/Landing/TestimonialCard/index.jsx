@@ -25,7 +25,7 @@ const TestimonialCard = () => {
 
   return (
     <div className='flex flex-col sm:flex-row gap-6 h-fit'>
-        <div className='hidden sm:block sm:h-[280px] sm:w-[280px] rounded-2xl overflow-hidden '>
+        <div className='hidden sm:block sm:h-[240px] sm:w-[240px] md:h-[280px] md:w-[280px] rounded-2xl overflow-hidden '>
             <img className='' src={imgLink}/>
         </div>
         <div className='flex flex-col gap-6 sm:gap-0 sm:justify-between sm:w-[592px]'>
