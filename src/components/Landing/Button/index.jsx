@@ -16,13 +16,14 @@ export default function Index(props) {
     className.push(
       "bg-indigo-500 py-4 px-32 text-white rounded-full font-semibold"
     );
+  if (props.isActive) className.push("text-indigo-500");
 
   const onClick = () => {
     if (props.onClick) props.onClick();
   };
-
+  console.log(props.sectionId);
   if (props.type === "link") {
-    <Link to={props.href} className={className.join(" ")}>
+    <Link to={props.sectionId} className={className.join(" ")}>
       {props.children}
     </Link>;
   }
@@ -43,4 +44,5 @@ Index.propTypes = {
   className: propTypes.string,
   isOutline: propTypes.bool,
   isLarge: propTypes.bool,
+  isActive: propTypes.bool,
 };
