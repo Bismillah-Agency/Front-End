@@ -3,6 +3,11 @@ import logo from "../../assets/Logo.svg";
 import maps from '../../assets/maps.png';
 
 const Footer = () => {
+
+    const handleMapsImage = () => {
+        window.open("https://goo.gl/maps/FtotQVgufJL1XzdV6", "_blank");
+    }
+
     return (
         <div className='flex flex-col gap-10'>
             <div className='flex justify-between'>
@@ -32,7 +37,7 @@ const Footer = () => {
                     <div className='flex flex-col'>
                         <h5 className='text-lg font-bold mb-5 text-indigo-500'>Office Address</h5>
                         <div>
-                            <img className='rounded-xl h-36' src={maps} alt="agency" />
+                            <img onClick={handleMapsImage} className='rounded-xl h-36' src={maps} alt="agency" />
                         </div>
                     </div>
                 </div>

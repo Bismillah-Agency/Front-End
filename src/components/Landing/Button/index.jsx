@@ -6,7 +6,7 @@ export default function Index(props) {
   const className = [props.className];
   if (props.isPrimary)
     className.push(
-      "bg-indigo-500 py-4 px-9 text-white rounded-full font-semibold"
+      "bg-indigo-500 py-4 px-9 text-white rounded-full font-semibold w-fit"
     );
   if (props.isOutline)
     className.push(
