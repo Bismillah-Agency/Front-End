@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
-import Button from '../../components/Landing/Button';
+import Button from '../../components/Button';
 import Card from '../../components/Card';
 import ServiceItem from '../../components/Landing/ServiceItem';
 import Footer from '../../components/Footer';
@@ -105,7 +105,7 @@ const Landing = () => {
     ]
 
     return (
-        <div className='px-28 py-14'>
+        <div className='px-10 md:px-16 lg:px-20 xl:px-28 py-14 scroll-smooth'>
             <Navbar />
             <section className='mt-44'>
                 <div className='flex flex-col gap-12 w-1/2'>
@@ -118,7 +118,7 @@ const Landing = () => {
             </section>
             <section className='flex flex-col gap-4 mt-40'>
                 <h5 className='text-xl font-semibold text-indigo-500'>ABOUT US</h5>
-                <div className='flex flex-row gap-8'>
+                <div className='flex flex-col lg:flex-row gap-8'>
                     <h3 className='text-4xl font-bold'>We are Twillio, an agency that focuses on service and website creation</h3>
                     <div className='flex flex-col gap-8 w-4/5'>
                         <p className='text-lg text-slate-400'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -130,16 +130,16 @@ const Landing = () => {
                 </div>
             </section>
             <section className='flex flex-col gap-14 mt-40'>
-                <div className='flex justify-between'>
+                <div className='flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between'>
                     <div className='flex flex-col gap-4'>
                         <h5 className='text-xl font-semibold text-indigo-500'>OUR WORKS</h5>
                         <h2 className='text-4xl font-bold'>Our latest cool projects</h2>
                     </div>
-                    <div className='self-center'>
+                    <div className='lg:self-center'>
                         <Button isOutline={true} >See More Works</Button>
                     </div>
                 </div>
-                <div className='grid grid-cols-3 gap-2'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 mx-auto'>
                     {
                         cardData.map((item, itemIdx) => (
                             <Card key={itemIdx} img={item.img} title={item.title} desc={item.desc} />
@@ -155,7 +155,7 @@ const Landing = () => {
                         <p className='text-lg text-slate-400 text-center'>We can create websites of your needs, such as</p>
                     </div>
                 </div>
-                <div className='grid grid-cols-4'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mx-auto'>
                     {
                         serviceData.map((item, itemIdx) => (
                             <ServiceItem key={itemIdx} title={item.title} desc={item.desc} icon={item.icon} />
@@ -164,11 +164,11 @@ const Landing = () => {
                 </div>
             </section>
             <section className='flex flex-col gap-14 mt-40'>
-                <div className='flex flex-col gap-4 w-1/2'>
+                <div className='flex flex-col gap-4 w-full lg:w-1/2'>
                     <h5 className='text-xl font-semibold text-indigo-500'>WHAT THEY SAY</h5>
                     <h2 className='text-4xl font-bold'>Their experience after using our services</h2>
                 </div>
-                <div className='flex testi_box flex-nowrap overflow-x-auto overflow-y-hidden'>
+                <div className='flex flex-col gap-10 sm:gap-12 md:gap-8 md:flex-row testi_box flex-nowrap overflow-x-auto overflow-y-hidden'>
                     {
                         testimonialData.map((item, itemIdx) => (
                             <TestimonialCard key={itemIdx} userImg={item.imgLink} userRating={item.rating} userReview={item.review} userName={item.userName} userDetail={item.userDetail} />
@@ -176,8 +176,8 @@ const Landing = () => {
                     }
                 </div>
             </section>
-            <section className='flex justify-between mt-40'>
-                <div className='flex flex-col self-center gap-16 w-1/2'>
+            <section className='flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between mt-40'>
+                <div className='flex flex-col self-center gap-16 w-full lg:w-2/5'>
                     <div>
                         <h5 className='text-xl font-semibold text-indigo-500 mb-4'>CONTACT US</h5>
                         <div className='flex flex-col gap-4'>
@@ -185,7 +185,7 @@ const Landing = () => {
                             <p className='text-lg text-slate-400'>We can create websites of your needs, such as</p>
                         </div>
                     </div>
-                    <div className='flex justify-between'>
+                    <div className='flex gap-8 lg:gap-0 lg:justify-between'>
                         <div className='flex flex-col gap-9'>
                             <div className='flex items-stretch gap-4'>
                                 <img src={phoneIcon} alt="arrow" />
@@ -208,7 +208,7 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative p-14'>
+                <div className='relative w-full lg:w-1/2 p-14'>
                     <img className='absolute top-0 right-0' src={circle} alt="circle" />
                     <img className='absolute bottom-0 left-0' src={dot} alt="dot" />
                     <div className='relative flex flex-col gap-8 p-8 rounded-2xl bg-white shadow-lg z-40'>

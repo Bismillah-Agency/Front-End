@@ -10,8 +10,8 @@ const Footer = () => {
 
     return (
         <div className='flex flex-col gap-10'>
-            <div className='flex justify-between'>
-                <div className='flex flex-col w-80 gap-5'>
+            <div className='flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between'>
+                <div className='flex flex-col w-full lg:w-80 gap-5'>
                     <img className='self-start h-10' src={logo} alt="logo" />
                     <p className='text-lg text-slate-400'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>

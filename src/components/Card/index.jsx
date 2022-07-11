@@ -8,8 +8,11 @@ const Card = ({ img, title, desc }) => {
     // const desc = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.";
 
     return (
-        <div className='rounded-xl p-5 grid-cols-3 w-96 hover:shadow-lg'>
-            <img className='rounded-xl h-60 mb-7' src={img} alt="img" />
+        <div className='rounded-xl p-5 grid-cols-3 hover:shadow-lg hover:scale-105 transition-all'>
+            <div className='rounded-2xl h-60 mb-7 w-full overflow-hidden'>
+                <img className='object-cover w-full h-full' src={img} alt="img" />
+            </div>
+            
             <h5 className='text-slate-700 text-2xl font-bold mb-1'>{title}</h5>
             <p className='text-slate-400 text-lg font-regular mb-5'>{desc}</p>
             <div className='flex items-stretch'>

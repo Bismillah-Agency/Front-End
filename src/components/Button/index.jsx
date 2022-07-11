@@ -6,15 +6,15 @@ export default function Index(props) {
   const className = [props.className];
   if (props.isPrimary)
     className.push(
-      "bg-indigo-500 py-4 px-9 text-white rounded-full font-semibold w-fit"
+      "bg-indigo-500 hover:bg-indigo-600 py-4 px-9 text-white rounded-full font-semibold w-fit hover:scale-110 transition-all"
     );
   if (props.isOutline)
     className.push(
-      "py-4 px-9 text-indigo-500 outline-indigo-500 outline outline-1 rounded-full font-semibold"
+      "py-4 px-9 text-indigo-500 hover:text-white hover:bg-indigo-500 outline-indigo-500 outline outline-1 rounded-full font-semibold hover:scale-110 transition-all"
     );
   if (props.isLarge)
     className.push(
-      "bg-indigo-500 py-4 px-32 text-white rounded-full font-semibold"
+      "bg-indigo-500 py-4 px-32 text-white rounded-full font-semibold w-full hover:bg-gray-600 transition-all"
     );
   if (props.isActive) className.push("text-indigo-500");
 
