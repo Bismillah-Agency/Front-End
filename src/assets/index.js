@@ -8,5 +8,6 @@ import emailIcon from './ic_email.svg';
 import phoneIcon from './ic_phone.svg';
 import instagramIcon from './ic_instagram.svg';
 import locationIcon from './ic_location.svg';
+import telegramIcon from './ic_telegram.svg';
 
-export { compIcon, olshopIcon, personalWebIcon, moreIcon, circle, dot, emailIcon, phoneIcon, instagramIcon, locationIcon };
+export { compIcon, olshopIcon, personalWebIcon, moreIcon, circle, dot, emailIcon, phoneIcon, instagramIcon, locationIcon, telegramIcon };

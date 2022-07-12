@@ -14,7 +14,7 @@ export default function Index(props) {
     );
   if (props.isLarge)
     className.push(
-      "bg-indigo-500 py-4 px-32 text-white rounded-full font-semibold w-full hover:bg-gray-600 transition-all"
+      "bg-indigo-500 py-4 justify-center text-white rounded-full font-semibold w-full hover:bg-indigo-700 transition-all"
     );
   if (props.isActive) className.push("text-indigo-500");
 
