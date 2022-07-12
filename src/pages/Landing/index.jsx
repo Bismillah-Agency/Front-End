@@ -18,6 +18,7 @@ import {
   emailIcon,
   phoneIcon,
   locationIcon,
+  telegramIcon,
 } from "../../assets";
 
 const Landing = () => {
