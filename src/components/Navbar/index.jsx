@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <div className="flex justify-between">
         <div className="flex">
-          <img src={logo} alt="" className="self-center"></img>
+          <img src={logo} alt="logo-agency" className="self-center"></img>
         </div>
 
         <div className="sm:flex gap-10 hidden">
@@ -33,7 +33,7 @@ export default function Navbar() {
           <Button isOutline={true}>Have a Project?</Button>
         </div>
         <button className="sm:hidden">
-          <img src={icon} alt="" />
+          <img src={icon} alt="collapse-icon" />
         </button>
       </div>
 

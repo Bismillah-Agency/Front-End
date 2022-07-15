@@ -206,7 +206,7 @@ const Landing = () => {
                             See Our Works
                         </Button>
                     </div>
-                    <div className="overflow-hidden lg:h-full lg:w-[31rem]">
+                    <div className="overflow-hidden lg:h-full lg:w-[31rem] 2xl:h-full 2xl:w-[40rem]">
                         <img
                             className="object-cover w-full h-full"
                             src={heroimage}
