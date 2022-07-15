@@ -43,6 +43,7 @@ Index.propTypes = {
   onClick: propTypes.func,
   className: propTypes.string,
   isOutline: propTypes.bool,
+  isPrimary: propTypes.bool,
   isLarge: propTypes.bool,
   isActive: propTypes.bool,
 };
