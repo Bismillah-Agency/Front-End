@@ -59,7 +59,7 @@ const Footer = () => {
             <div>
               <img
                 onClick={handleMapsImage}
-                className="rounded-xl h-36"
+                className="rounded-xl h-36 cursor-pointer"
                 src={maps}
                 alt="agency"
               />
